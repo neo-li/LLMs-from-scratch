@@ -1,9 +1,14 @@
 # Optional Setup Instructions
 
+```bash
+brew install python
+```
 
-This document lists different approaches for setting up your machine and using the code in this repository. I recommend browsing through the different sections from top to bottom and then deciding which approach best suits your needs.
+python3 --version
+Python 3.9.6
 
-&nbsp;
+python3 -m pip --version
+pip 21.2.4 from /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages/pip (python 3.9)
 
 ## Quickstart
 
@@ -11,6 +16,12 @@ If you already have a Python installation on your machine, the quickest way to g
 
 ```bash
 pip install -r requirements.txt
+```
+
+or 
+
+```bash
+python3 -m pip install -r requirements.txt
 ```
 
 <br>
@@ -103,28 +114,3 @@ pip install -r requirements.txt
 Then, navigate to the Python script or Jupyter Notebook you want to run. Optionally, you can also easily connect a GPU to accelerate the code's runtime, for example, when you are pretraining the LLM in chapter 5 or finetuning it in chapters 6 and 7.
 
 <img src="https://sebastianraschka.com/images/LLMs-from-scratch-images/setup/README/studio.webp" alt="1" width="700">
-
-&nbsp;
-
-## Using Google Colab
-
-To use a Google Colab environment in the cloud, head over to [https://colab.research.google.com/](https://colab.research.google.com/) and open the respective chapter notebook from the GitHub menu or by dragging the notebook into the *Upload* field as shown in the figure below.
-
-<img src="https://sebastianraschka.com/images/LLMs-from-scratch-images/setup/README/colab_1.webp" alt="1" width="700">
-
-
-Also make sure you upload the relevant files (dataset files and .py files the notebook is importing from) to the Colab environment as well, as shown below.
-
-<img src="https://sebastianraschka.com/images/LLMs-from-scratch-images/setup/README/colab_2.webp" alt="2" width="700">
-
-
-You can optionally run the code on a GPU by changing the *Runtime* as illustrated in the figure below.
-
-<img src="https://sebastianraschka.com/images/LLMs-from-scratch-images/setup/README/colab_3.webp" alt="3" width="700">
-
-
-&nbsp;
-
-# Questions?
-
-If you have any questions, please don't hesitate to reach out via the [Discussions](https://github.com/rasbt/LLMs-from-scratch/discussions) forum in this GitHub repository.
